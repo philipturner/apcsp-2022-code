@@ -13,8 +13,8 @@ let old_clean_2020: Double = 0.27 // nuclear, hydro
 let new_clean_2020: Double = 0.08 // solar, wind, geothermal
 let dirty_2020 = 1.00 - old_clean_2020 - new_clean_2020
 
-let old_clean_2050: Double = 0.25
-let new_clean_2050: Double = 0.40
+let old_clean_2050: Double = 0.30
+let new_clean_2050: Double = 0.50
 let dirty_2050 = 1.00 - old_clean_2050 - new_clean_2050
 
 let emissions_2020: Double = 35
