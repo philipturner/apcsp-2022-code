@@ -7,8 +7,15 @@
 
 import Foundation
 
-let percent_2050: Double = 0.99
-let year_end: Double = 2100
+// Parameters
+
+let old_clean_2020: Double = 0.27 // nuclear, hydro
+let new_clean_2020: Double = 0.08 // solar, wind, geothermal
+let dirty_2020 = 1.00 - old_clean_2020 - new_clean_2020
+
+let old_clean_2050: Double = 0.25
+let new_clean_2050: Double = 0.40
+let dirty_2050 = 1.00 - old_clean_2050 - new_clean_2050
 
 let emissions_2020: Double = 35
 let ppm_2020: Double = 412.5
@@ -16,6 +23,19 @@ let celsius_2020: Double = 0.98
 
 let ppm_per_gigaton: Double = 0.28
 let celsius_per_ppm: Double = 0.008
+
+// Simulation
+
+func roundNumber(_ x: Double, dp decimalPlaces: Int = 0) -> String {
+  String(format: "%.\(decimalPlaces)f", x)
+}
+
+print("Goal: limit temperature rise to 1.5 C")
+print("Fossil fuel % (2020): \(roundNumber(dirty_2020 * 100, dp: 0))")
+print("Fossil fuel % (2050): \(roundNumber(dirty_2050 * 100, dp: 0))")
+
+let percent_2050: Double = max(0.01, min(dirty_2050 / dirty_2020, 0.99))
+let year_end: Double = 2100
 
 let delta_time: Double = year_end - 2020
 let yearly_rate = pow(M_E, log(percent_2050) / 30)
@@ -49,9 +69,18 @@ let added_ppm = added_gigatons * ppm_per_gigaton
 
 let total_ppm = added_ppm + ppm_2020
 let total_celsius = added_ppm * celsius_per_ppm + celsius_2020
-let total_fahrenheit = 1.8 * total_celsius
 
-print("Added Gigatons: \(added_gigatons)")
-print("Total PPM: \(total_ppm)")
-print("Temperature rise (C): \(total_celsius)")
-print("temperature rise (F): \(total_fahrenheit)")
+print()
+print("At 2020:")
+print("Total PPM: \(roundNumber(ppm_2020))")
+print("Temperature rise (C): \(roundNumber(celsius_2020, dp: 1))")
+print("Temperature rise (F): \(roundNumber(celsius_2020 * 1.8, dp: 1))")
+
+print()
+print("Added Gigatons CO2: \(roundNumber(added_gigatons))")
+
+print()
+print("By 2100:")
+print("Total PPM: \(roundNumber(total_ppm))")
+print("Temperature rise (C): \(roundNumber(total_celsius, dp: 1))")
+print("Temperature rise (F): \(roundNumber(total_celsius * 1.8, dp: 1))")
