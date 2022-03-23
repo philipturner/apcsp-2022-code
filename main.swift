@@ -39,8 +39,7 @@ let percent_2050: Double = max(0.01, min(dirty_2050 / dirty_2020, 0.99))
 let year_end: Double = 2100
 
 let delta_time: Double = year_end - 2020
-let yearly_rate = exp(log(percent_2050) / 30)
-let log_rate = log(yearly_rate)
+let log_rate = log(percent_2050) / 30
 
 func integral_body_1(x: Double) -> Double {
   (1 / log_rate) * exp(x * log_rate)
