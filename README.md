@@ -1,8 +1,8 @@
 # Climate Change Forecasting
 
-Creates a linear regression mapping amount of CO2 burned to temperature rise. This modifies the projection of global warming by 2100, based on what % of energy is renewable by 2050. It increases energy requirements by 50% between 2020-2050, reflecting the increase in energy consumption as more countries have a higher standard of living.
+Creates a linear regression mapping amount of CO2 burned to temperature rise. This modifies the projection of global warming by 2100, based on what % of energy is renewable by 2050. Energy demand increases 50% between 2020 and 2050, reflecting the higher standard of living in currently developing countries.
 
-The linear regression is possible because CO2 concentration (atmospheric parts per million/PPM) has an extremely high correlation with the cumulative number of gigatons emitted. To forecast the future cumulative emissions, it takes the integral of an exponential decay function. This design is optimized to forecast best-case scenarios, where temperature rise is close to 1.5 C. More pessimistic scenarios (>2 C) are skewed to project an overly large temperature rise.
+The linear regression is possible because CO2 concentration (atmospheric parts per million/PPM) has an extremely high correlation with the cumulative number of gigatons emitted. To forecast the future cumulative emissions, it takes the integral of an exponential decay function. The temperature formula is optimized to forecast best-case scenarios, where temperature rise is close to 1.5 C. More pessimistic scenarios (>2 C) are skewed to project an overly large temperature rise.
 
 ## Energy Categories
 
