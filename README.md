@@ -14,7 +14,7 @@ The linear regression is possible because CO2 concentration (atmospheric parts p
 
 ## Projections
 
-> Goal: limit temperature rise to 1.5 C
+> Goal: Limit temperature rise to 1.5 C
 
 With the default percents of each energy category:
 
