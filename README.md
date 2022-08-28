@@ -2,6 +2,8 @@
 
 Creates a linear regression mapping amount of CO2 burned to temperature rise. This modifies the projection of global warming by 2100, based on what % of energy is renewable by 2050. It increases energy requirements by 50% between 2020-2050, reflecting the increase in energy consumption as more countries have a higher standard of living.
 
+The linear regression is possible because CO2 concentration (atmospheric parts per million/PPM) has an extremely high correlation with the cumulative number of gigatons emitted.
+
 ## Energy Categories
 
 | Category | Description | % (2020) | Default % (2050) |
@@ -31,4 +33,42 @@ By 2100:
 Total PPM: 738
 Temperature rise (C): 3.6
 Temperature rise (F): 6.5
+```
+
+With 5% dirty, 35% old clean, 60% new clean:
+
+```
+Fossil fuel % (2020): 65
+Fossil fuel % (2050): 5
+
+At 2020:
+Total PPM: 412
+Temperature rise (C): 1.0
+Temperature rise (F): 1.8
+
+Added Gigatons CO2: 488
+
+By 2100:
+Total PPM: 549
+Temperature rise (C): 2.1
+Temperature rise (F): 3.7
+```
+
+With 0.5% dirty, 37% old clean, 62.5% new clean:
+
+```
+Fossil fuel % (2020): 65
+Fossil fuel % (2050): 1
+
+At 2020:
+Total PPM: 412
+Temperature rise (C): 1.0
+Temperature rise (F): 1.8
+
+Added Gigatons CO2: 253
+
+By 2100:
+Total PPM: 483
+Temperature rise (C): 1.5
+Temperature rise (F): 2.8
 ```
