@@ -31,7 +31,7 @@ func roundNumber(_ x: Double, dp decimalPlaces: Int = 0) -> String {
   String(format: "%.\(decimalPlaces)f", x)
 }
 
-print("Goal: limit temperature rise to 1.5 C")
+print("Goal: Limit temperature rise to 1.5 C")
 print("Fossil fuel % (2020): \(roundNumber(dirty_2020 * 100, dp: 0))")
 print("Fossil fuel % (2050): \(roundNumber(dirty_2050 * 100, dp: 0))")
 
