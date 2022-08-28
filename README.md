@@ -72,3 +72,15 @@ Total PPM: 483
 Temperature rise (C): 1.5
 Temperature rise (F): 2.8
 ```
+
+## Usage
+
+Download and run the Swift script:
+
+```
+swift main.swift
+```
+
+Or copy and paste its contents into [Google Colab](https://github.com/philipturner/swift-colab):
+
+<img width="805" alt="Screen Shot 2022-08-28 at 7 53 13 PM" src="https://user-images.githubusercontent.com/71743241/187099966-086198cc-4610-4e22-b5db-ef9052929878.png">
