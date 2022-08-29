@@ -41,6 +41,7 @@ let year_end: Double = 2100
 let delta_time: Double = year_end - 2020
 let log_rate = log(percent_2050) / 30
 
+// Unused formula that doesn't account for increased energy demand.
 func integral_body_1(x: Double) -> Double {
   (1 / log_rate) * exp(x * log_rate)
 }
