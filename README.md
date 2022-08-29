@@ -31,12 +31,13 @@ With the default percents of each energy category:
 ```
 Fossil fuel % (2020): 65
 Fossil fuel % (2050): 20
-Added Gigatons CO2: 1163
 
 At 2020:
 Total PPM: 412
 Temperature rise (C): 1.0
 Temperature rise (F): 1.8
+
+Added Gigatons CO2: 1163
 
 By 2100:
 Total PPM: 738
