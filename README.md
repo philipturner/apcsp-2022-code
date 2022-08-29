@@ -4,6 +4,16 @@ Uses a linear regression mapping amount of CO2 burned to temperature rise. This 
 
 The linear regression is possible because CO2 concentration (atmospheric parts per million/PPM) has an extremely strong correlation with the cumulative number of gigatons emitted. To forecast the future cumulative emissions, it takes the integral of an exponential decay function, where fossil fuel usage decays toward 0%. The temperature formula is optimized to forecast best-case scenarios, where temperature rise is close to 1.5 C. It does not account for the effects of large-scale carbon sequestration.
 
+```swift
+// Simulation parameters:
+let emissions_2020: Double = 35
+let ppm_2020: Double = 412.5
+let celsius_2020: Double = 0.98
+
+let ppm_per_gigaton: Double = 0.28
+let celsius_per_ppm: Double = 0.008
+```
+
 ## Energy Categories
 
 | Category | Description | % (2020) | Default % (2050) |
