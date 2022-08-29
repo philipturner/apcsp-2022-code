@@ -45,15 +45,19 @@ func integral_body_1(x: Double) -> Double {
   (1 / log_rate) * exp(x * log_rate)
 }
 
-// formula acquired from Wolfram Alpha
+// Formula acquired from Wolfram Alpha.
 func integral_body_2(x: Double) -> Double {
   // pow(rate, x)
   let numerator_pt_1 = exp(x * log_rate)
 
-  // for energy increasing 50% by 2050
+  // For energy increasing 50% by 2050:
   // energy = 1 + 0.5 * (x / 30)
   // energy = 1 + x / 60
   // energy = 1 + x / coeff
+  //
+  // Energy increases 167% by 2100, but that doesn't effect results because the
+  // world should by 99% renewable by then. This creates unreliable estimates in 
+  // pessimistic scenarios.
   let coeff: Double = 60
 
   let numerator_pt_2 = (x + coeff) * log_rate - 1
