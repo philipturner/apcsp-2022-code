@@ -56,7 +56,7 @@ func integral_body_2(x: Double) -> Double {
   // energy = 1 + x / coeff
   //
   // Energy increases 167% by 2100, but that doesn't effect results because the
-  // world should by 99% renewable by then. This creates unreliable estimates in 
+  // world should be 99% renewable by then. This creates unreliable estimates in 
   // pessimistic scenarios.
   let coeff: Double = 60
 
