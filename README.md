@@ -16,11 +16,11 @@ let celsius_per_ppm: Double = 0.008
 
 ## Energy Categories
 
-| Category | Description | % (2020) | Default % (2050) |
+| Category | Description | % (2020) | Default % (2050) | Requirements for 1.5 C |
 | -------- | ----------- | -------- | ---------------- |
-| Dirty | Fossil fuels | 65% | 20% |
-| Old Clean | Renewables that are already well-established (nuclear fission, hydro) | 27% | 30% |
-| New Clean | Renewables that are new to the 21st century (nuclear fusion, solar, wind, geothermal) | 8% | 50% |
+| Dirty | Fossil fuels | 65% | 20% | 0.5% |
+| Old Clean | Renewables that are already well-established (nuclear fission, hydro) | 27% | 30% | 37% |
+| New Clean | Renewables that are new to the 21st century (nuclear fusion, solar, wind, geothermal) | 8% | 50% | 62.5% |
 
 ## Projections
 
